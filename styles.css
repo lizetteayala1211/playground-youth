@@ -1,0 +1,312 @@
+/* font faces */
+
+@font-face {
+    font-family: "EuroStar-Black-Extended";
+    src: url("./assets/fonts/eurostarblackextended.ttf");
+}
+
+@font-face {
+    font-family: "EuroStar-Regular-Extended";
+    src: url("./assets/fonts/eurostarregularextended.ttf");
+}
+
+body {
+    background-color: #0066FF;
+    background-image: url(./assets/images/grid/1.jpg);
+    overflow: hidden;
+}
+
+#blackboard {
+    display: block;
+    width: 100%;
+    height: 97%;
+    pointer-events: all;
+    background-image: url(./assets/images/grid/grid4.png);
+    background-position: 0px 0px;
+    background-size: auto 30px;
+    background-repeat: repeat;
+}
+
+#notes-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row; 
+}
+
+#elements-container {
+    width: 100%;
+    height: 100%;
+    display: flex;    
+    flex-direction: column; 
+/*    background-color: green;*/
+    align-self: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#top-wrapper-container {
+    width: 100%;
+    height: 13%;
+    display: flex;    
+    flex-direction: row; 
+/*    background-color: yellow;*/
+}
+
+#title-wrapper-container {
+    width: 95.5vw;
+    height: 60%;
+    display: flex;    
+    flex-direction: row; 
+/*    background-color: red;*/
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 18px;
+}
+
+#title-container {
+    font-family: "EuroStar-Black-Extended";
+    color: white;
+    font-size: 2.33vw;
+    border-bottom: 1px solid white;
+}
+
+#break-wrapper-container {
+    width: 15vw;
+    height: 60%;
+    display: flex;    
+    flex-direction: row; 
+/*    background-color: green;*/
+    align-self: center;
+}
+
+#break-container {
+    width: 80%;
+    height: 55%;
+    display: flex;    
+    flex-direction: row; 
+/*    background-color: yellow;*/
+    border-bottom: 1px solid white;
+    margin-left: 18px;
+}
+
+#hours-wrapper-container {
+    width: 42vw;
+    height: 60%;
+    display: flex;    
+    flex-direction: row; 
+/*    background-color: red;*/
+    align-self: center;
+}
+
+#hours-container {
+    font-family: "EuroStar-Regular-Extended";
+    color: white;
+    font-size: 1.57vw;
+    text-align: center;
+    display: flex;
+    align-self: center;
+}
+
+#image-wrapper-container {
+    width: 100%;
+    height: 45%;
+    display: flex;    
+    flex-direction: row; 
+    justify-content: space-around;
+/*    background-color: green;*/
+}
+
+#annex-image-container {
+    width: 29.5%;
+    height: 100%;
+    display: flex;    
+    flex-direction: row; 
+    border: 1px solid white;
+}
+
+#annex-image-container.first {
+    background-image: url('./assets/images/non-profit-imgs/Community-Fridges.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#annex-image-container.third {
+    background-image: url('./assets/images/non-profit-imgs/Greenhouse.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#annex-image-container.fourth {
+    background-image: url('./assets/images/non-profit-imgs/Take-One-Leave-One-Library.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bottom-wrapper-container {
+    width: 100%;
+    height: 37%;
+    display: flex;    
+    flex-direction: column; 
+    justify-content: flex-start;
+/*    background-color: yellow;*/
+}
+
+#copy-wrapper-container {
+    font-family: "EuroStar-Regular-Extended";
+    color: white;
+    font-size: 1.57vw;
+    width: 96%;
+    margin-left: 22px;
+    height: auto;
+    display: flex;    
+/*    background-color: red;*/
+    margin-top: 25px;
+}
+
+#bold-copy {
+    font-family: EuroStar-Black-Extended;
+}
+
+#button-book-wrapper-container {
+    font-family: "EuroStar-Regular-Extended";
+    color: white;
+    font-size: 1.57vw;
+    width: 96%;
+    height: auto;
+    margin-left: 22px;
+    display: flex;  
+    flex-direction: row;  
+    justify-content: flex-start;
+/*    background-color: green;*/
+    margin-top: 50px;
+/*    margin-bottom: -20px;*/
+}
+
+#marketplace-button-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: EuroStar-Black-Extended;
+    color: white;
+    font-size: 1.6vw;
+    width: auto;
+    height: 40%;
+    border: 1px solid white;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#marketplace-button-container:hover {
+    background-color: white;
+    color: #0066FF;
+}
+
+#annex-link {
+    color: white;
+    font-family: "EuroStar-Black-Extended";
+/*    font-size: 20px;*/
+/*    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;*/
+    border: none !important;
+    text-decoration: none;
+}
+
+#annex-link:hover {
+    background-color: white;
+    color: #0066FF;
+}
+
+#initiatives-wrapper-container {
+    display: flex;
+    flex-direction: row;  
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin-left: 22px;
+    margin-top: 40px;
+/*    background-color: red;*/
+}
+
+#initiatives-reference-container {
+    font-size: 1.57vw;
+    font-family: "EuroStar-Regular-Extended";
+}
+
+
+#initiatives-break-container {
+    width: 5%;
+    height: 50%;
+    display: flex;    
+    border-bottom: 1px solid white;
+    margin-left: 25px;
+    margin-right: 25px;
+/*    background-color: green;*/
+}
+
+#break-wrapper-container {
+    width: 96%;
+    height: 10%;
+/*    margin-left: 18px;*/
+    display: flex;  
+    background-color: green;
+    margin-top: 30px;
+}
+
+#copy-break-container {
+    width: 100%;
+    height: 55%;
+    display: flex;    
+/*    background-color: yellow;*/
+    border-bottom: 1px solid white;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+body {
+    background-color: #0066FF;
+    background-image: url(./assets/images/grid/1.jpg);
+    overflow: auto;
+}   
+
+#blackboard {
+    display: block;
+    width: 100%;
+    height: 99vh;
+    pointer-events: all;
+    background-image: url(./assets/images/grid/grid4.png);
+    background-position: 0px 0px;
+    background-size: auto 30px;
+    background-repeat: repeat;
+}
+
+#notes-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 95%;
+    height: 97.5vh;
+    border: 2px solid white;
+    margin: 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+}
